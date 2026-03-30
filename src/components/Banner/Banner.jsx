@@ -5,7 +5,7 @@ import { CiPlay1 } from "react-icons/ci";
 
 
 const Banner = () => {
-    return (<div className=' banner-container  border-4 border-indigo-500 w-11/12 mx-auto  mt-2'>
+    return (<div className=' banner-container   w-11/12 mx-auto  mt-2'>
 
         <div className='banner-side flex flex-col md:flex-row  p-5 mt-3 justify-center gap-10 '>
             

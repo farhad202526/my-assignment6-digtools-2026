@@ -3,6 +3,7 @@
 import './App.css'
 import Banner from './components/Banner/Banner'
 import Nav from './components/Nav/Nav'
+import Priceing from './components/Priceing/Priceing'
 import Star from './components/Star/Star'
 import Step from './components/Step/Step'
 
@@ -24,7 +25,12 @@ function App() {
 
 
    {/* <h1>add step section </h1> */}
-   <Step></Step>
+   {/* <Step></Step> */}
+
+   {/* <h1>pricetin section add </h1> */}
+   <Priceing></Priceing>
+
+
 
 
 

@@ -6,19 +6,19 @@ import React from 'react';
 
 import setp1 from '../../assets/user.png'
 import setp2 from '../../assets/package.png'
-import setp3 from '../../assets/user.png'
+import setp3 from '../../assets/rocket.png'
 
 const Step = () => {
     return (<div className='bg-[#F9FAFC] '>
-         <div className=' w-11/12  mx-auto  border-4 border-indigo-500 my-7   p-5 space-y-2 '>
-            <div className='border-4 border-indigo-900 flex flex-col justify-center items-center text-center  mt-7 gap-2'>
+         <div className=' w-11/12  mx-auto   my-7   p-5 space-y-10 '>
+            <div className=' flex flex-col justify-center items-center text-center  mt-7 mb-10 gap-5'>
 
-                <h1  className='font-extrabold text-4xl md:text-5xl'>Get Started in 3 Steps</h1>
+                <h1  className='font-extrabold text-4xl md:text-5xl'>Simple, Transparent Pricing</h1>
                 <p className='text-xlmd: text-2xl text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
 
             </div>
 
-            <div className='setp-crad-container grid grid-cols-1 md:grid-cols-3     justify-center items-center  w-fit mx-auto border-4 border-indigo-900   gap-8      '>
+            <div className='setp-crad-container grid grid-cols-1 md:grid-cols-3     justify-center items-center  w-fit mx-auto     gap-8  mb-7    '>
                 
                 
                 {/* <h1>crad 1</h1> */}
@@ -54,7 +54,7 @@ const Step = () => {
                      
                     
                     <div className='h-28 w-28 rounded-full flex text-center items-center justify-center bg-[#d8b7f1] '>
-                        <img className=' ' src={setp1} alt="" />
+                        <img className=' ' src={setp3} alt="" />
                     </div>
                     <h1 className=' text-4xl font-bold'>Start Creating</h1>
                     <p className='text-xl text-[#627382]'>Download and start using your premium tools immediately.</p>

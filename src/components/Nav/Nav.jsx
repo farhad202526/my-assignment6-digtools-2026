@@ -5,7 +5,7 @@ import { TiShoppingCart } from "react-icons/ti";
 const Nav = () => {
     return (
         <div className='w-11/12 mx-auto sticky top-1 z-50'>
-            <div className="navbar bg-base-100 shadow-sm mt-4 border-4 border-indigo-500 ">
+            <div className="navbar bg-base-100 shadow-sm mt-4 border-1 border-indigo-500 rounded-2xl ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

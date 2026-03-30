@@ -2,8 +2,10 @@
 
 import './App.css'
 import Banner from './components/Banner/Banner'
+import Footer from './components/Footer/Footer'
 import Nav from './components/Nav/Nav'
 import Priceing from './components/Priceing/Priceing'
+import Ready from './components/Ready/Ready'
 import Star from './components/Star/Star'
 import Step from './components/Step/Step'
 
@@ -29,6 +31,13 @@ function App() {
 
    {/* <h1>pricetin section add </h1> */}
    <Priceing></Priceing>
+
+   {/* <h1> rady secton </h1> */}
+
+   <Ready></Ready>
+
+   {/* <h1>footer add </h1> */}
+   <Footer></Footer>
 
 
 

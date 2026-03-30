@@ -25,7 +25,7 @@ function App() {
 
 
    {/* <h1>add step section </h1> */}
-   {/* <Step></Step> */}
+   <Step></Step>
 
    {/* <h1>pricetin section add </h1> */}
    <Priceing></Priceing>

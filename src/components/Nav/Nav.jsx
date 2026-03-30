@@ -53,7 +53,8 @@ const Nav = () => {
      
       
    
-    <button className="btn btn-xs sm:btn-sm md:btn-md  lg:btn-lg xl:btn-xl bg-[#4F39F6] border-[#4F39F6] text-white hover:bg-[#3b2bc4] rounded-3xl ">Get Started</button>
+    {/* <button className="btn btn-xs sm:btn-sm md:btn-md  lg:btn-lg xl:btn-xl bg-[#4F39F6] border-[#4F39F6] text-white hover:bg-[#3b2bc4] rounded-3xl ">Get Started</button> */}
+    <button className="btn border-none text-white bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA] hover:scale-105 transition-all shadow-lg px-10 rounded-2xl  ">Get Started</button>
   </div>
 </div> 
             

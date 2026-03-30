@@ -13,7 +13,7 @@ const Step = () => {
          <div className=' w-11/12  mx-auto   my-7   p-5 space-y-10 '>
             <div className=' flex flex-col justify-center items-center text-center  mt-7 mb-10 gap-5'>
 
-                <h1  className='font-extrabold text-4xl md:text-5xl'>Simple, Transparent Pricing</h1>
+                <h1  className='font-extrabold text-4xl md:text-5xl'>Get Started in 3 Steps</h1>
                 <p className='text-xlmd: text-2xl text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
 
             </div>

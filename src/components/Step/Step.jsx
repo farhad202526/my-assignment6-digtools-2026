@@ -50,7 +50,7 @@ const Step = () => {
                 {/* <h1>crad 3</h1> */}
                 <div className='setp-crad relative h-96  max-w-96 bg-white rounded-2xl flex flex-col justify-center text-center      items-center mt-3.5 border-1 border-indigo-800  p-9 gap-6 '>
 
-                    <p className=' absolute  top-6 right-9   bg-[#4F39F6]  text-white text-xl font-bold h-11 w-11 text-center p-1.5 rounded-full  '>03</p>
+                    <p className=' absolute  top-6 right-9   bg-[#4F39F6]  text-white text-xl font-bold h-11 w-11 text-center p-1.5 rounded-full  '>0</p>
                      
                     
                     <div className='h-28 w-28 rounded-full flex text-center items-center justify-center bg-[#d8b7f1] '>

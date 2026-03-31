@@ -5,10 +5,11 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='bg-[#101727]'>
-            <footer className="footer   sm:footer-horizontal    p-10 bg-[#101727] text-amber-50">
+        <div className='bg-[#101727]  '>
+            <div className='w-11/12 mx-auto  '>
+                            <footer className="footer   sm:footer-horizontal    p-10 bg-[#101727] text-amber-50 ">
  
-  <nav className=' flex flex-col justify-center items-center text-center md:justify-normal '>
+  <nav className='  '>
      <h1 className='text-4xl font-bold  '>DigiTools</h1>
    
    <div>
@@ -85,7 +86,44 @@ const Footer = () => {
     </div>
   </nav>
 
+  {/* <h1>copy wright add </h1> */}
+
+
+   
+
 </footer>
+
+
+
+
+
+
+            </div>
+            <div className='w-11/12  mx-auto mt-1 '>
+
+            <hr className='text-white' />
+
+           <div className='flex flex-col md:flex-row gap-3  justify-between mb-5 p-3 '>
+             <div>
+                        <aside className='text-white'>
+                  <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+                  </aside>
+            </div>
+
+            <div className='text-white flex gap-5 '>
+                <p>Privacy Policy    </p>
+                <p> Terms of Service </p>
+                <p>Cookies</p>
+            </div>
+           </div>
+
+
+                  
+            </div>
+
+
+   
+
   
  
 

@@ -2,28 +2,120 @@
 
 
 import React from 'react';
+import { MdDelete } from "react-icons/md";
+import { CiShoppingCart } from "react-icons/ci";
+import { toast } from 'react-toastify';
 
-const YouCrad = () => {
+
+const YouCrad = ({YouCd,setYouCd}) => {
+    console.log(YouCd,setYouCd)
+
+    const handalDelet =(yourcrad)=>{
+        console.log(yourcrad)
+
+        
+    const filter = YouCd.filter((yyoucrad)=> yyoucrad.name !==yourcrad.name)
+
+    console.log(filter,'fliterdddddd')
+
+   setYouCd(filter)
+   toast(`${yourcrad.name} is Delete `);
+
+      
+
+
+
+    }
+    const handleCheckout = () => {
+        toast.success("Chackout Success is Add to crad" );
+        setYouCd([])};
+
+    
     return (
-        <div className='cread-contriner '>
 
-           <div className=' crad border-4 border-indigo-500 flex justify-between items-center p-3 mx-0 md:mx-65 bg-[#F9FAFC] '>
+        <div className='space-y-4'>
 
-            <div className='flex  items-center gap-2.5'>
-                <h1>imsg </h1>
+           
+           
+           
+              <div className='cread-contriner space-y-3 '>
+             </div>
+
+            { YouCd.length===0? <div className='flex flex-col justify-center items-center rounded-b-2xl bg-[#F9FAFC]  gap-7 mx-auto  p-5'>
+                <div  className='text-9xl'><CiShoppingCart /></div>
+                <h2 className='text-6xl font-bold'>Cart is Empty.</h2>
+                <p className='text-3xl'>Please add some products to your cart.</p>
+            </div>:YouCd.map(yourcrad=>{
+                
+
+
+                    return  <div key={yourcrad.id} className=' crad border-2 border-indigo-500 flex  justify-between items-center p-3 mx-0 md:mx-65 bg-[#F9FAFC] rounded-2xl'>
+
+            <div className='flex  items-center gap-5'>
+                <div className='text-4xl'>{yourcrad.icon}</div>
                 <div>
-                    <p>sdd</p>
-                    <p>sddd</p>
+                    <h1 className='text-3xl font-bold'>{yourcrad.name}</h1>
+                    <p className='text-xl text-[#627382] font-bold'>${yourcrad.price}</p>
                 </div>
 
 
             </div>
             <div>
-                <p>deleted</p>
+                
+                {/* <div className='text-3xl mr-10'><MdDelete /> </div> */}
+                <button onClick={()=>handalDelet(yourcrad)} className='btn text-3xl'><MdDelete /></button>
             </div>
 
-           </div>
+
+
+
+           </div>;
+                })
+            }
+
+
+
+            {YouCd.length===0?<h className="hidden" >adddd</h> :<div className=' crad  flex justify-between items-center p-10 mx-0 md:mx-65  '>
+
             
+            
+                <div className='flex justify-center mx-auto' >
+                    {/* <button className=' w-100 h-7 btn btn-primary text-2xl  rounded-2xl p-9  '>Proceed to Checkout</button> */}
+                    <button onClick={handleCheckout} className='  w-100 h-16 text-2xl rounded-2xl btn bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA] hover:scale-105 transition-all shadow-lg text-white  '>Proceed to Checkout</button>
+
+
+
+
+
+                    {/* <button 
+  onClick={() => handaler()} 
+  disabled={isAlreadyInCart} 
+  className={`btn border-none text-white transition-all shadow-lg px-10 rounded-2xl w-full hover:scale-105 
+    ${isAlreadyInCart ? 'bg-green-500 cursor-not-allowed opacity-70' : 'bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA]'}`}
+>
+  {isAlreadyInCart ? "Added to Cart" : "Buy Now"}
+</button> */}
+                </div>
+           
+
+           </div>
+
+            }
+
+           {/* <div className=' crad  flex justify-between items-center p-10 mx-0 md:mx-65  '>
+
+            
+            
+                <div className='flex justify-center mx-auto' >
+                    <button className=' w-100 h-7 btn btn-primary text-2xl  rounded-2xl p-9'>Proceed to Checkout</button>
+                </div>
+           
+
+           </div> */}
+            
+        
+        
+        
         </div>
     );
 };

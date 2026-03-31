@@ -2,7 +2,7 @@
 import React from 'react';
 import { TiShoppingCart } from "react-icons/ti";
 
-const Nav = () => {
+const Nav = ({YouCd}) => {
     return (
         <div className='w-11/12 mx-auto sticky top-1 z-50'>
             <div className="navbar bg-base-100 shadow-sm mt-4 border-1 border-indigo-500 rounded-2xl ">
@@ -42,7 +42,7 @@ const Nav = () => {
   <div className="navbar-end gap-2 flex flex-col-reverse   md:flex-row  ">
    <div className='flex mt-2 items-center gap-5 md:'>
      <div className='relative '>
-        <p className='absolute -top-5 text-[#dedbdc] text-xl font-bold  text-center  h-7 w-7 rounded-full bg-red-600 '>1</p>
+        <p className='absolute -top-5 text-[#dedbdc] text-xl font-bold  text-center  h-7 w-7 rounded-full bg-red-600 '>{YouCd.length}</p>
 
     <p className='text-xl md:text-4xl'><TiShoppingCart /> </p>
     </div>

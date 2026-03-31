@@ -10,7 +10,7 @@ const Priceing = () => {
     
                 </div>
     
-                <div className='setp-crad-container grid grid-cols-1 md:grid-cols-3     justify-center items-center  w-fit mx-auto     gap-8  mb-7  mt-20   '>
+                <div className='setp-crad-container grid grid-cols-1 md:grid-cols-3      justify-center items-center  w-fit mx-auto     gap-8  mb-7  mt-20   '>
 
 
                     {/* <h1>add sss new cread 1</h1> */}

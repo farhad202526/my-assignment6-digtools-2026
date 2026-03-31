@@ -5,8 +5,9 @@
 import React, { use, useState } from 'react';
 import Products from '../Products/Products';
 import YouCrad from '../YouCrad/YouCrad';
+import { toast } from 'react-toastify';
 
-const Premium = ({Promiss}) => {
+const Premium = ({Promiss,YouCd,setYouCd}) => {
     console.log(Promiss,"premium")
 
     const CradsData =use(Promiss);
@@ -16,6 +17,8 @@ const Premium = ({Promiss}) => {
 
 
     const [selectedtype,setselctedtype] = useState("availble")
+
+    // const [YouCd,setYouCd]=useState([])
     
      return (<div className=' '>
              <div className=' w-11/12  mx-auto   my-6   p-5 space-y-10 '>
@@ -27,11 +30,14 @@ const Premium = ({Promiss}) => {
                    {/* <h1>btn containe </h1> */}
 
                     <div className='flex flex-col md:flex-row   gap-3'>
-                    <button onClick={()=>setselctedtype("availble")} className={`btn ${selectedtype==="availble" ? " bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA] hover:scale-105 transition-all shadow-lg text-white":"" } btn border-2 border-indigo-500 rounded-2xl w-40`}>Products</button>
+                    <button onClick={()=>{setselctedtype("availble");toast("Products");}} className={`btn ${selectedtype==="availble" ? " bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA] hover:scale-105 transition-all shadow-lg text-white":"" } btn border-2 border-indigo-500 rounded-2xl w-40`}>Products</button>
 
 
 
-                    <button onClick={()=>setselctedtype("selected")} className={`btn ${selectedtype==="selected" ? " bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA] hover:scale-105 transition-all shadow-lg text-white":"" } btn border-2 border-indigo-500 rounded-2xl w-40`}>Cart (2)</button>
+                    <button onClick={()=>{setselctedtype("selected");toast("Crads"); }} className={`btn ${selectedtype==="selected" ? " bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA] hover:scale-105 transition-all shadow-lg text-white":"" } btn border-2 border-indigo-500 rounded-2xl w-40` }>Carts ({YouCd.length})</button>
+
+
+                    {/* <button onClick={()=>setselctedtype("selected")} className={`btn ${selectedtype==="selected" ? " bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA] hover:scale-105 transition-all shadow-lg text-white":"" } btn border-2 border-indigo-500 rounded-2xl w-40` }>Cart ({YouCd.length})</button> */}
                 </div>
                  {/* { setselctedtype==="availble" ?  <h1>avable  crad</h1>:<h2>addd cread to </h2>} */}
 
@@ -67,8 +73,8 @@ const Premium = ({Promiss}) => {
 
 
                  { selectedtype === "availble" ? 
-                             <Products CradsData={CradsData} ></Products>
-                                : <YouCrad></YouCrad>
+                             <Products CradsData={CradsData} YouCd={YouCd} setYouCd={setYouCd} ></Products>
+                                : <YouCrad YouCd={YouCd} setYouCd={setYouCd} ></YouCrad>
                    }
 
 

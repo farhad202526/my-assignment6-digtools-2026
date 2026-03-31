@@ -1,6 +1,6 @@
 
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
 import Footer from './components/Footer/Footer'
@@ -10,6 +10,7 @@ import Priceing from './components/Priceing/Priceing'
 import Ready from './components/Ready/Ready'
 import Star from './components/Star/Star'
 import Step from './components/Step/Step'
+import { ToastContainer } from 'react-toastify'
 
 
 
@@ -26,6 +27,7 @@ const fethPomiss = async()=>{
 
 
 function App() {
+  const [YouCd,setYouCd]=useState([])
   
 
   const Promiss = fethPomiss()
@@ -39,7 +41,7 @@ function App() {
     
     <>
     {/* <h1>addd nve section </h1> */}
-   <Nav></Nav>
+   <Nav YouCd={YouCd}></Nav>
 
    {/* <h1>add banner section </h1> */}
    <Banner></Banner>
@@ -52,7 +54,7 @@ function App() {
 
    <Suspense fallback={<span className="loading loading-bars loading-xl"></span>} >
     
-   <Premium Promiss={Promiss} ></Premium>
+   <Premium Promiss={Promiss} YouCd={YouCd} setYouCd={setYouCd} ></Premium>
    
    </Suspense>
 
@@ -69,13 +71,7 @@ function App() {
 
    {/* <h1>footer add </h1> */}
    <Footer></Footer>
-
-
-
-
-
-    
-  
+<ToastContainer />
     </>
   )
 }

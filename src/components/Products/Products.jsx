@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import Crad from '../Crad/Crad';
 
 
@@ -17,22 +17,31 @@ const Products = ({CradsData}) => {
 };
 
     console.log(CradsData,"products")
+
+    // const  [isSelected,setisSelected]=useState(false);
     return (
             <div>
                 
                 {/* <h1>crad contriner </h1> */}
     
-                <div className='setp-crad-container grid grid-cols-1 md:grid-cols-3     justify-center items-center  w-fit mx-auto     gap-8  mb-7  mt-20   '>
+                <div className='setp-crad-container grid grid-cols-1 md:grid-cols-3     justify-center items-center  w-fit mx-auto     gap-8  mb-7  mt-10   '>
 
 
 
 
 
                     {CradsData.map(Cred=>{
+
+                     const [isSeleted ,setisSeleted]=useState(false)
+                        
                         return <div className="card md:w-96 bg-base-100 shadow-sm">
                       <div className="card-body relative space-y-3 bg-[#F9FAFC]  rounded-2xl border-2 border-indigo-900">
                     
                         <div className='mt-7'>
+
+                          <div className='text-5xl'>  {
+                                Cred.icon
+                            }</div>
                             {/* <img className='w-15' src={img1} alt="" /> */}
                         </div>
 
@@ -69,11 +78,22 @@ const Products = ({CradsData}) => {
 
 
                           
-                        </ul>
+                        </ul >
                         <div className="mt-6">
+                          <button 
+  onClick={() => setisSeleted(true)} 
+  className={`btn border-none text-white transition-all shadow-lg px-10 rounded-2xl w-full     hover:scale-105 
+    ${isSeleted ? 'bg-green-500' : 'bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA]'}`}
+>
+                      {isSeleted ? "Added to Cart" : "Buy Now"}
+                    </button>
+
+
+
+
                           
-                          <button className="btn border-none text-white bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA] hover:scale-105 transition-all shadow-lg px-10 rounded-2xl w-full">Buy Now</button>
-                        </div>
+                          {/* <button onClick={()=>setisSeleted(true)} className="btn border-none text-white bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA] hover:scale-105 transition-all shadow-lg px-10 rounded-2xl w-full">{isSeleted=== true ? "Added to Crat": "Buy Now"}</button> */}
+ </div>
                       </div>
                                            </div>;
                     })}

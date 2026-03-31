@@ -28,7 +28,7 @@ const Banner = () => {
            <div className=' flex  justify-center md:justify-start gap-2'>
 
              {/* <button className="btn btn-primary rounded-2xl">Explore Products</button> */}
-             <button className="btn btn-primary border-none text-white bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA] hover:scale-105 transition-all shadow-lg px-10 rounded-2xl ">Explore Products</button>
+             <button className="btn btn-primary  border-none text-white bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA] hover:scale-105 transition-all shadow-lg px-10 rounded-2xl ">Explore Products</button>
               <button className="btn btn-outline btn-primary border-1 border-indigo-800  rounded-2xl"> <CiPlay1 />Watch Demo</button>
             </div>
 

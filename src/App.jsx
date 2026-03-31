@@ -4,6 +4,7 @@ import './App.css'
 import Banner from './components/Banner/Banner'
 import Footer from './components/Footer/Footer'
 import Nav from './components/Nav/Nav'
+import Premium from './components/Premium/Premium'
 import Priceing from './components/Priceing/Priceing'
 import Ready from './components/Ready/Ready'
 import Star from './components/Star/Star'
@@ -21,9 +22,11 @@ function App() {
    <Banner></Banner>
 
    {/* <h1>addd Star section </h1> */}
+
    <Star></Star>
 
    {/* <h1>crad section </h1> */}
+   <Premium></Premium>
 
 
    {/* <h1>add step section </h1> */}

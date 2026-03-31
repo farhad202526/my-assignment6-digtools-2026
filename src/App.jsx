@@ -1,5 +1,6 @@
 
 
+import { Suspense } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
 import Footer from './components/Footer/Footer'
@@ -10,10 +11,32 @@ import Ready from './components/Ready/Ready'
 import Star from './components/Star/Star'
 import Step from './components/Step/Step'
 
+
+
+
+
+const fethPomiss = async()=>{
+  const res =await fetch("/Data.json")
+
+  return res.json();
+
+}
+
+
+
+
 function App() {
+  
+
+  const Promiss = fethPomiss()
+
+  console.log(Promiss ,"app ")
+
+
  
 
   return (
+    
     <>
     {/* <h1>addd nve section </h1> */}
    <Nav></Nav>
@@ -26,7 +49,12 @@ function App() {
    <Star></Star>
 
    {/* <h1>crad section </h1> */}
-   <Premium></Premium>
+
+   <Suspense fallback={<span className="loading loading-bars loading-xl"></span>} >
+    
+   <Premium Promiss={Promiss} ></Premium>
+   
+   </Suspense>
 
 
    {/* <h1>add step section </h1> */}

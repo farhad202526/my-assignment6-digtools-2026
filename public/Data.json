@@ -2,6 +2,10 @@
 
 
 
+
+
+
+
 [
   {
     "id": 1,
@@ -11,14 +15,9 @@
     "period": "one-time",
     "tag": "New",
     "tagType": "new",
-    "features": [
-      "3 basic templates",
-      "Manual ATS check",
-      "Export to PDF",
-      "Community support"
-    ],
+    "features": ["3 basic templates", "Manual ATS check", "Export to PDF", "Community support"],
     "icon": "🌱",
-    "img": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80"
+    "img": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&q=80"
   },
   {
     "id": 2,
@@ -28,32 +27,61 @@
     "period": "monthly",
     "tag": "Popular",
     "tagType": "popular",
-    "features": [
-      "Unlimited templates",
-      "AI-powered ATS optimization",
-      "Cover letter builder",
-      "Priority email support",
-      "Custom domain hosting"
-    ],
+    "features": ["Unlimited templates", "AI-powered ATS optimization", "Cover letter builder", "Priority email support"],
     "icon": "🚀",
-    "img": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+    "img": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80"
   },
   {
     "id": 3,
     "name": "Enterprise",
-    "description": "Advanced features and dedicated support for long-term career growth.",
+    "description": "Advanced features and dedicated support for long-term growth.",
     "price": 149,
     "period": "yearly",
     "tag": "Best Seller",
     "tagType": "best-seller",
-    "features": [
-      "Everything in Professional",
-      "1-on-1 career coaching",
-      "LinkedIn profile audit",
-      "Multi-user collaboration",
-      "Early access to new features"
-    ],
+    "features": ["Everything in Professional", "1-on-1 career coaching", "LinkedIn profile audit", "Custom domain hosting"],
     "icon": "💎",
-    "img": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+    "img": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Student",
+    "description": "Affordable access to essential tools for academic success.",
+    "price": 5,
+    "period": "monthly",
+    "tag": "Education",
+    "tagType": "education",
+    "features": ["5 premium templates", "Internship guide", "Digital certificate", "Ad-free experience"],
+    "icon": "🎓",
+    "img": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=500&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Freelancer",
+    "description": "Build a stunning portfolio and manage clients with ease.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Flexible",
+    "tagType": "flexible",
+    "features": ["Portfolio website builder", "Contract templates", "Client management tool", "Unlimited PDF exports"],
+    "icon": "💻",
+    "img": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=500&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Ultimate",
+    "description": "The final plan you will ever need with lifetime updates.",
+    "price": 299,
+    "period": "one-time",
+    "tag": "Lifetime",
+    "tagType": "lifetime",
+    "features": ["All premium features", "Lifetime updates", "Dedicated account manager", "Offline access mode"],
+    "icon": "🔥",
+    "img": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=500&q=80"
   }
 ]
+
+
+
+
+

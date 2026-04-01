@@ -43,7 +43,7 @@ const Nav = ({YouCd}) => {
    <div className='flex mt-2 items-center gap-5 md:'>
      <div className='relative '>
       {/* <h1>count crad</h1> */}
-        { YouCd.length===0 ?<h2 className='hidden'>new </h2>:<p className='absolute -top-5 text-[#fcfcfc] text-xl font-bold  text-center  h-7 w-7 rounded-full  bg-[#3c30dd] '>{YouCd.length}</p>}
+        { YouCd.length===0 ?<h2 className='hidden'>new </h2>:<p className='absolute -top-5 text-[#fcfcfc] text-xl font-bold  text-center  h-7 w-7 rounded-full  bg-[#3c30dd] border-2 border-white '>{YouCd.length}</p>}
         {/* <p className='absolute -top-5 text-[#dedbdc] text-xl font-bold  text-center  h-7 w-7 rounded-full bg-red-600 '>{YouCd.length}</p> */}
 
 

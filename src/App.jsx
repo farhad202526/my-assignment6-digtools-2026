@@ -52,7 +52,7 @@ function App() {
 
    {/* <h1>crad section </h1> */}
 
-   <Suspense fallback={<span className="loading loading-bars loading-xl"></span>} >
+   <Suspense fallback={<span className="loading loading-bars loading-xl flex justify-center mx-auto"></span>} >
     
    <Premium Promiss={Promiss} YouCd={YouCd} setYouCd={setYouCd} ></Premium>
    

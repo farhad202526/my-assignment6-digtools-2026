@@ -34,12 +34,11 @@ const Premium = ({Promiss,YouCd,setYouCd}) => {
 
 
 
-                    <button onClick={()=>{setselctedtype("selected");toast("Crads"); }} className={`btn ${selectedtype==="selected" ? " bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA] hover:scale-105 transition-all shadow-lg text-white":"" } btn border-2 border-indigo-500 rounded-2xl w-40` }>Carts ({YouCd.length})</button>
+                    <button onClick={()=>{setselctedtype("selected");toast("Crads"); }} className={`btn ${selectedtype==="selected" ? " bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA] hover:scale-105 transition-all shadow-lg text-white":"" } btn border-2 border-indigo-500 rounded-2xl w-40` }>Carts {YouCd.length===0 ?<p className='hidden'>addd</p> :<samp className='text-[#4F39F6] font-bold'>({YouCd.length})</samp>}</button>
 
-
-                    {/* <button onClick={()=>setselctedtype("selected")} className={`btn ${selectedtype==="selected" ? " bg-gradient-to-r from-[#4F39F6] via-[#7227F8] to-[#9514FA] hover:scale-105 transition-all shadow-lg text-white":"" } btn border-2 border-indigo-500 rounded-2xl w-40` }>Cart ({YouCd.length})</button> */}
+                 
                 </div>
-                 {/* { setselctedtype==="availble" ?  <h1>avable  crad</h1>:<h2>addd cread to </h2>} */}
+                
 
 
 
@@ -48,18 +47,10 @@ const Premium = ({Promiss,YouCd,setYouCd}) => {
                  { selectedtype === "availble" ? (
                   <h1 className="text-xl font-bold hidden ">ccc</h1>
                    ) : (
-                  <h2 className="text-3xl   font-extrabold">Your Cart</h2>)}
+                  <h2 className="text-3xl   font-extrabold"> {YouCd.length==0? <h className="hidden">me</h>:<h>Your Cart</h>}</h2>)}
                 </div>
-                 {/* <h1>emty crad</h1> */}
-                 
-                 {/* {selectedtype === "availble" ? (
-                   <Products CradsData={CradsData} />
-                 ) : (
-               <div className="text-center p-10 border-2 border-dashed rounded-2xl">
-            <h2 className="text-2xl font-bold">Your Cart is Empty</h2>
-            <p>Add some premium tools to get started!</p>
-                 </div>
-                   )} */}
+
+                
 
 
 

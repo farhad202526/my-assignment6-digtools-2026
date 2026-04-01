@@ -6,7 +6,7 @@ DigiTools Premium – Your Ultimate Digital Solutions Hub
 2. A little Description
 DigiTools Premium is a modern, responsive web application designed for career seekers and professionals. It provides a curated collection of digital products and pricing plans (Starter, Professional, Enterprise, etc.) to help users boost their productivity. Users can browse various service cards, see detailed features, add them to their cart, and proceed to a seamless checkout experience.
 
-3. Technology that you use
+3. Technology that you use 
 
 React.js: For building the dynamic user interface.
 
